@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo">
+            <div class="heading">
+                <h1>TO-DO List</h1> <img class="img-todo"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxcpegI45VkN5IAt1IYqFJKx1DMptZmeJmyCdmuEEfFaouWGxTsH7btnOf0EIX-4UmD4o&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Add your to-do" id="inputField">
+                <button class="btn">Add</button>
+            </div>
+            <div class="todoelement">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        let inputElem = document.getElementById("inputField");
+        let addBtn = document.querySelector(".btn");
+        let todoelem = document.querySelector(".todoelement")
+
+        const addTodo = () => {
+            // console.log(inputElem.value);
+            let pElem = document.createElement("p");
+            
+            pElem.textContent = inputElem.value;
+            todoelem.append(pElem);
+            inputElem.value = "";
+
+        }
+        addBtn.addEventListener("click", () => {
+            addTodo();
+        })
+    </script>
+</body>
+
+</html>

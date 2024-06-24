@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    background: linear-gradient(135deg,#153677,#4e085f);
+    width: 100%;
+    height:100vh;
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #153677;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.img-todo{
+    height: 75px;
+    width: 90px;
+
+}
+#inputField{
+    flex: 1;
+    background-color: #8080806e;
+    height: 40px;
+    padding-left: 10px;
+    width: 50%;
+    font-size: 14px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+}
+
+.btn{
+    background-color: #e38110;
+    border-style: none;
+    color: white;
+    height: 40px;
+    /* padding-left: 10px; */
+    width: 14%;
+    outline: none;
+    border-radius: 20px;
+    position: absolute;
+    left: 334px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.input{
+    position: relative;
+    text-align: center;
+    margin-top: 24px;
+}
+.todoelement{
+        /* padding: 15px 143px; */
+        margin: 15px 143px;
+        line-height: 30px;
+}
